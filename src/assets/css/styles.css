@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-theme-purple;
+}
+
+.header {
+  @apply flex flex-col mt-4 justify-between;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    @apply container flex-row mt-8 mx-auto items-center content-center;
+  }
+}
