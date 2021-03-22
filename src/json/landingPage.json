@@ -71,7 +71,7 @@
         },
         {
             "title": "Courses Management",
-            "imageUrl": "assets/images/Management.png",
+            "imageUrl": "assets/images/ManagementApp.png",
             "type": "Website",
             "responsibility": [
                 "Web Development",
@@ -79,6 +79,48 @@
             ],
             "credit": "https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App",
             "url": "/project/courses-management"
+        }
+    ],
+    "advantage": [
+        [{
+            "title": "Communicative",
+            "description": "We communicate our project ideas and progress to make it clear.",
+            "imageUrl": "assets/images/Communicative.png"
+        },
+        {
+            "title": "Management",
+            "description": "We manage our project properly to make our project done well.",
+            "imageUrl": "assets/images/Management.png"
+        }],
+        [{
+            "title": "Collaborative​",
+            "description": "Our team are very collaborative to make our project done well.",
+            "imageUrl": "assets/images/Collaborative.png"
+        },
+        {
+            "title": "Favourite",
+            "description": "We've did so many project and all of our client love it.",
+            "imageUrl": "assets/images/Favourite.png"
+        }]
+    ],
+    "testimonial": [
+        {
+            "name": "Sasha Rose",
+            "company": "Owner, Surveyor Corps",
+            "testimoni": "Thanks for Racxstudio, you guys are the best! Keep up the great work!",
+            "imageUrl": "assets/images/Sasha.jpg"
+        },
+        {
+            "name": "Kruger Khan",
+            "company": "Director, Shultan Oil",
+            "testimoni": "I just wanted to let you know that it’s been great working with Racxstudio.",
+            "imageUrl": "assets/images/Kruger.jpg"
+        },
+        {
+            "name": "Reiner John",
+            "company": "CEO, Marley CO",
+            "testimoni": "Racxstudio is so great. Thank you so much for a job well done.",
+            "imageUrl": "assets/images/Reiner.jpg"
         }
     ]
 }
