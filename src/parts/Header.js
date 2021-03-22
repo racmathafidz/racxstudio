@@ -12,7 +12,7 @@ export default function Header(props) {
     return (
         <header className="header">
             
-            <div className="flex justify-between mx-4 lg:mx-0">
+            <div className="flex justify-between px-4 lg:px-0">
                 <BrandIcon/>
 
                 <button className="block text-theme-blue lg:hidden focus:outline-none" onClick={() => setIsCollapse(!isCollapse)}>
@@ -26,28 +26,28 @@ export default function Header(props) {
             <ul className={`hidden text-theme-blue tracking-widest items-center lg:flex flex-row mt-0`}>
                 <li>
                     <Button 
-                        className={`${path === "/" ? "active" : ""} px-3 no-underline hover:underline`}
+                        className={`${path === "/" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
                         type="link" href="/">
                         Home
                     </Button>
                 </li>
                 <li className="py-2 lg:py-0">
                     <Button 
-                        className={`${path === "/team" ? "active" : ""} px-3 no-underline hover:underline`}
+                        className={`${path === "/team" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
                         type="link" href="/team">
                         Team
                     </Button>
                 </li>
                 <li className="py-2 lg:py-0">
                     <Button 
-                        className={`${path === "/project" ? "active" : ""} px-3 no-underline hover:underline`}
+                        className={`${path === "/project" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
                         type="link" href="/project">
                         Project
                     </Button>
                 </li>
                 <li>
                     <Button 
-                        className={`${path === "/discuss-project" ? "active" : ""} mx-auto ml-3 px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
+                        className={`${path === "/discuss-project" ? "active" : ""} text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
                         type="link" href="/discuss-project">
                         Discuss Project
                     </Button>
@@ -56,14 +56,14 @@ export default function Header(props) {
             
             <Transition
                 show={isCollapse}
-                enter="transition-opacity duration-200"
+                enter="transition-opacity duration-300"
                 enterFrom="opacity-0"
                 enterTo="opacity-100"
-                leave="transition-opacity duration-200"
+                leave="transition-opacity duration-300"
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-                <ul className={`flex flex-col text-theme-blue tracking-widest mt-5 lg:hidden`}>
+                <ul className={`flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden`}>
                     <li className="py-2">
                         <Button 
                             className={`${path === "/" ? "active" : ""} px-10 no-underline hover:underline`}
@@ -85,7 +85,7 @@ export default function Header(props) {
                             Project
                         </Button>
                     </li>
-                    <li className="mx-auto mt-7">
+                    <li className="mx-auto my-9">
                         <Button 
                             className={`${path === "/discuss-project" ? "active" : ""} mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
                             type="link" href="/discuss-project">

@@ -1,0 +1,84 @@
+{
+    "service" : [
+        {
+            "title": "Web Development",
+            "imageUrl": "assets/images/Web.png"
+        },
+        {
+            "title": "Mobile Development",
+            "imageUrl": "assets/images/Mobile.png"
+        },
+        {
+            "title": "UI/UX Design",
+            "imageUrl": "assets/images/Design.png"
+        }
+    ],
+    "portfolio" : [
+        {
+            "title": "Recruiting App",
+            "imageUrl": "assets/images/Recruiting.png",
+            "type": "Mobile Apps",
+            "responsibility": [
+                "Mobile Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15164950-Recruiting-app",
+            "url": "/project/recruiting"
+        },
+        {
+            "title": "Stream+",
+            "imageUrl": "assets/images/Stream.png",
+            "type": "Mobile Apps",
+            "responsibility": [
+                "Mobile Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15276430-Stream",
+            "url": "/project/stream"
+        },
+        {
+            "title": "Freelance",
+            "imageUrl": "assets/images/Freelance.png",
+            "type": "Mobile Apps",
+            "responsibility": [
+                "Mobile Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
+            "url": "/project/freelance"
+        },
+        {
+            "title": "Aura",
+            "imageUrl": "assets/images/Aura.png",
+            "type": "Website",
+            "responsibility": [
+                "Web Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15176338-Aura-Website-Main-Page",
+            "url": "/project/aura"
+        },
+        {
+            "title": "Surtido Rico",
+            "imageUrl": "assets/images/Surtido.png",
+            "type": "Website",
+            "responsibility": [
+                "Web Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15173118-Surtido-Rico",
+            "url": "/project/surtido"
+        },
+        {
+            "title": "Courses Management",
+            "imageUrl": "assets/images/Management.png",
+            "type": "Website",
+            "responsibility": [
+                "Web Development",
+                "UI/UX Design"
+            ],
+            "credit": "https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App",
+            "url": "/project/courses-management"
+        }
+    ]
+}

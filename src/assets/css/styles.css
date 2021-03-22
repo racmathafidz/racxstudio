@@ -2,16 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+  @apply mb-32;
+}
+
 .active {
   @apply text-theme-purple;
 }
 
 .header {
-  @apply flex flex-col mt-4 justify-between;
+  @apply flex flex-col py-4 mb-4 justify-between;
+}
+
+.hero {
+  @apply container px-5 flex flex-col mx-auto;
+}
+
+.portofolio-card:hover .img-hover {
+  @apply opacity-25;
 }
 
 @media (min-width: 1024px) {
   .header {
-    @apply container flex-row mt-8 mx-auto items-center content-center;
+    @apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+  }
+
+  .hero {
+    @apply container flex-row mx-auto mt-8;
   }
 }
