@@ -8,7 +8,7 @@ export default function Portfolio({ data }) {
             <h1 className="text-5xl text-theme-blue text-center font-bold">Our Selected Project</h1>
 
             <p className="font-light text-lg text-gray-400 text-center mb-12">
-            We are ready to scale up your business with our great work result.
+                We are ready to scale up your business with our great work result.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 sm:gap-2 xl:gap-8 justify-items-center">
@@ -30,7 +30,7 @@ export default function Portfolio({ data }) {
                                     </div>
                                     <div className="py-4">
                                         <h2 className="text-theme-blue text-center text-xl">{item.title}</h2>
-                                        <h2 className="font-light text-gray-400 text-center">{item.type}</h2>
+                                        <p className="font-light text-gray-400 text-center">{item.type}</p>
                                     </div>                      
                                 </div>
                             </Button>

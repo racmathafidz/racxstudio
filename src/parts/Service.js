@@ -1,9 +1,5 @@
 import React from 'react'
 
-import Web from 'assets/images/Web.png'
-import Mobile from 'assets/images/Mobile.png'
-import Design from 'assets/images/Design.png'
-
 export default function Service({ data }) {
     return (
         <section className="container mx-auto">

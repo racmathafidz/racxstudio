@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Advantage({ data }) {
     return (
-        <section className="container mx-auto mb-14">
+        <section className="container mx-auto mb-24 sm:mb-18 xl:mb-16">
             <h1 className="text-5xl text-theme-blue text-center font-bold">Why Choose Us</h1>
 
             <p className="font-light text-lg text-gray-400 text-center mb-12 sm:mb-5 xl:mb-0">
