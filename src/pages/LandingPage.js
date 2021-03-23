@@ -7,6 +7,7 @@ import Portfolio from 'parts/Portfolio'
 import Advantage from 'parts/Advantage'
 import Testimonial from 'parts/Testimonial'
 import Discuss from 'parts/Discuss'
+import Footer from 'parts/Footer'
 
 import Data from 'json/landingPage.json'
 
@@ -21,6 +22,7 @@ export default class LandingPage extends Component {
                 <Advantage data={Data.advantage}></Advantage>
                 <Testimonial data={Data.testimonial}></Testimonial>
                 <Discuss></Discuss>
+                <Footer></Footer>
             </>
         )
     }

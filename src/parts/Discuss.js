@@ -2,7 +2,7 @@ import React from 'react'
 
 import Button from 'elements/Button'
 
-export default function Discuss({ data }) {
+export default function Discuss() {
     return (
         <section className="flex container mx-auto justify-center">
             <div className="flex flex-col w-10/12 sm:w-11/12 xl:w-10/12 rounded-2xl bg-theme-purple text-gray-100 py-14 sm:px-12 sm:py-20 xl:px-16 shadow-2xl discuss">
