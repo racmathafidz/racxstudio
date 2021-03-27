@@ -15,7 +15,7 @@ export default function Service({ data }) {
                         return (
                             <div className="group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-110">
                                 <img src={item.imageUrl} alt="Service" className="w-full rounded-t-2xl"/>
-                                <h2 className="bg-theme-purple text-white text-center text-xl py-7 rounded-b-2xl">{item.title}</h2>
+                                <h2 className="text-theme-blue text-center text-xl py-7 rounded-b-2xl">{item.title}</h2>
                             </div>
                         )
                     })
