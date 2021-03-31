@@ -6,13 +6,18 @@
     "@craco/craco": "^6.1.1",
     "@headlessui/react": "^0.3.1",
     "@splidejs/react-splide": "^0.4.4",
+    "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "emailjs-com": "^2.6.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-tabs": "^3.2.1",
+    "react-toastify": "^7.0.3",
+    "redux": "^4.0.5",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
