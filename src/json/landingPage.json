@@ -15,6 +15,7 @@
     ],
     "portfolio" : [
         {
+            "_id": "asd1293uasdads1",
             "title": "Recruiting App",
             "imageUrl": "assets/images/Recruiting.png",
             "type": "Mobile Apps",
@@ -22,10 +23,10 @@
                 "Mobile Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15164950-Recruiting-app",
-            "url": "/project/recruiting"
+            "credit": "https://dribbble.com/shots/15164950-Recruiting-app"
         },
         {
+            "_id": "asd1293uhjkhkjh2",
             "title": "Stream+",
             "imageUrl": "assets/images/Stream.png",
             "type": "Mobile Apps",
@@ -33,10 +34,10 @@
                 "Mobile Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15276430-Stream",
-            "url": "/project/stream"
+            "credit": "https://dribbble.com/shots/15276430-Stream"
         },
         {
+            "_id": "asd1293uvbvcbbd3",
             "title": "Freelance",
             "imageUrl": "assets/images/Freelance.png",
             "type": "Mobile Apps",
@@ -44,10 +45,10 @@
                 "Mobile Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
-            "url": "/project/freelance"
+            "credit": "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept"
         },
         {
+            "_id": "asd1293ufgdfgs4",
             "title": "Aura",
             "imageUrl": "assets/images/Aura.png",
             "type": "Website",
@@ -55,10 +56,10 @@
                 "Web Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15176338-Aura-Website-Main-Page",
-            "url": "/project/aura"
+            "credit": "https://dribbble.com/shots/15176338-Aura-Website-Main-Page"            
         },
         {
+            "_id": "asd1293ulskmnb5",
             "title": "Surtido Rico",
             "imageUrl": "assets/images/Surtido.png",
             "type": "Website",
@@ -66,10 +67,10 @@
                 "Web Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15173118-Surtido-Rico",
-            "url": "/project/surtido"
+            "credit": "https://dribbble.com/shots/15173118-Surtido-Rico"
         },
         {
+            "_id": "asd1293ulkmnbj6",
             "title": "Courses Management",
             "imageUrl": "assets/images/ManagementApp.png",
             "type": "Website",
@@ -77,8 +78,7 @@
                 "Web Development",
                 "UI/UX Design"
             ],
-            "credit": "https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App",
-            "url": "/project/courses-management"
+            "credit": "https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App"
         }
     ],
     "advantage": [
@@ -121,6 +121,68 @@
             "company": "CEO, Marley CO",
             "testimoni": "Racxstudio is so great. Thank you so much for a job well done.",
             "imageUrl": "assets/images/Reiner.jpg"
+        }
+    ],
+    "team": [
+        {
+            "name": "Rach David",
+            "position": "CEO",
+            "imageUrl": "assets/images/CEO.jpg"
+        },
+        {
+            "name": "Pauline Sydney",
+            "position": "HRD",
+            "imageUrl": "assets/images/HRD.jpg"
+        },
+        {
+            "name": "Granger Watterson",
+            "position": "Finance",
+            "imageUrl": "assets/images/Finance.jpg"
+        },
+        {
+            "name": "Tom Jimmy",
+            "position": "Project Manager",
+            "imageUrl": "assets/images/Project-manager.jpg"
+        },
+        {
+            "name": "Jim Hendrix",
+            "position": "Front-end Developer",
+            "imageUrl": "assets/images/Frontend1.jpg"
+        },
+        {
+            "name": "Calvin Max",
+            "position": "Front-end Developer",
+            "imageUrl": "assets/images/Frontend2.jpg"
+        },
+        {
+            "name": "Hawkins Jim",
+            "position": "Back-end Developer",
+            "imageUrl": "assets/images/Backend1.jpg"
+        },
+        {
+            "name": "Don Bizaro",
+            "position": "Back-end Developer",
+            "imageUrl": "assets/images/Backend2.jpg"
+        },
+        {
+            "name": "Bill Markinson",
+            "position": "Mobile Developer",
+            "imageUrl": "assets/images/Mobile1.jpg"
+        },
+        {
+            "name": "Igor Kavarov",
+            "position": "Mobile Developer",
+            "imageUrl": "assets/images/Mobile2.jpg"
+        },
+        {
+            "name": "Freddie Curl",
+            "position": "UI/UX Designer",
+            "imageUrl": "assets/images/UIUX2.jpg"
+        },
+        {
+            "name": "Monica Lovegood",
+            "position": "UI/UX Designer",
+            "imageUrl": "assets/images/UIUX1.jpg"
         }
     ]
 }
