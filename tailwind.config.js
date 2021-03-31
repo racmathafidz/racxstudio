@@ -53,11 +53,19 @@ module.exports = {
     },
     spacing: {
       '71': '17.75rem',
+      '95': '23.5rem',
+      '192': '48rem',
+      '192.5': '49.5rem',
+      '193': '51rem'
     }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')({
+      strategy: 'class',
+    })
+  ],
 }
 }
