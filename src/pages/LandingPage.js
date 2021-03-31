@@ -12,11 +12,16 @@ import Footer from 'parts/Footer'
 import Data from 'json/landingPage.json'
 
 export default class LandingPage extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         return (
             <>
-                <Header></Header>
-                <Hero></Hero>
+                <Header {...this.props}></Header>
+                <Hero {...this.props}></Hero>
                 <Service data={Data.service}></Service>
                 <Portfolio data={Data.portfolio}></Portfolio>
                 <Advantage data={Data.advantage}></Advantage>
