@@ -4,7 +4,7 @@ import Button from 'elements/Button'
 
 export default function Portfolio({ data }) {
     return (
-        <section className="container mx-auto flex flex-col items-center">
+        <section className="container mx-auto flex flex-col items-center mt-20">
             <h1 className="text-5xl text-theme-blue text-center font-bold">Our Selected Project</h1>
 
             <p className="font-light text-lg text-gray-400 text-center mb-12">
@@ -15,7 +15,7 @@ export default function Portfolio({ data }) {
                 {
                     data.map( item => {
                         return (
-                            <Button type="link" href={item.url}>
+                            <Button type="link" href={`/project/${item._id}`}>
                                 <div className="group rounded-2xl shadow-xl w-auto w-11/12 m-3 transform transition duration-500 hover:scale-110 portofolio-card">
                                     <div className="relative">
                                         <img src={item.imageUrl} alt="Portfolio" className="rounded-t-2xl z-0"/>

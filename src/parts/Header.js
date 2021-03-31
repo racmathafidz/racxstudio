@@ -5,9 +5,9 @@ import Button from 'elements/Button'
 import BrandIcon from 'parts/BrandIcon'
 
 export default function Header(props) {
-
-    const path = props.location
+ 
     const [isCollapse, setIsCollapse] = useState(false)
+    const path = props.location.pathname
 
     return (
         <header className="header">
@@ -23,31 +23,31 @@ export default function Header(props) {
                 </button>
             </div>
 
-            <ul className={`hidden text-theme-blue tracking-widest items-center lg:flex flex-row mt-0`}>
+            <ul className="hidden text-theme-blue tracking-widest items-center lg:flex flex-row mt-0">
                 <li>
-                    <Button 
-                        className={`${path === "/" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
-                        type="link" href="/">
+                    <Button
+                        className={`${path === "/" ? "active-link" : "" } text-lg px-5 no-underline hover:underline`}
+                        type="link" href="">
                         Home
                     </Button>
                 </li>
                 <li className="py-2 lg:py-0">
                     <Button 
-                        className={`${path === "/team" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
+                        className={`${path === "/team" ? "active-link" : "" } text-lg px-5 no-underline hover:underline`}
                         type="link" href="/team">
                         Team
                     </Button>
                 </li>
                 <li className="py-2 lg:py-0">
                     <Button 
-                        className={`${path === "/project" ? "active" : ""} text-lg px-5 no-underline hover:underline`}
+                        className={`${path === "/project" ? "active-link" : "" } text-lg px-5 no-underline hover:underline`}
                         type="link" href="/project">
                         Project
                     </Button>
                 </li>
                 <li>
                     <Button 
-                        className={`${path === "/discuss-project" ? "active" : ""} text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
+                        className={`text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
                         type="link" href="/discuss-project">
                         Discuss Project
                     </Button>
@@ -66,35 +66,35 @@ export default function Header(props) {
                 <ul className={`flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden`}>
                     <li className="py-2">
                         <Button 
-                            className={`${path === "/" ? "active" : ""} px-10 no-underline hover:underline`}
+                            className={`${path === "/" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/">
                             Home
                         </Button>
                     </li>
                     <li className="py-2">
                         <Button 
-                            className={`${path === "/team" ? "active" : ""} px-10 no-underline hover:underline`}
+                            className={`${path === "/team" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/team">
                             Team
                         </Button>
                     </li>
                     <li className="py-2">
                         <Button 
-                            className={`${path === "/project" ? "active" : ""} px-10 no-underline hover:underline`}
+                            className={`${path === "/project" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/project">
                             Project
                         </Button>
                     </li>
                     <li className="mx-auto my-9">
                         <Button 
-                            className={`${path === "/discuss-project" ? "active" : ""} mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
+                            className={`mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
                             type="link" href="/discuss-project">
                             Discuss Project
                         </Button>
                     </li>
                 </ul>
             </Transition>
-
+                
         </header>
     )
 }

@@ -1,10 +1,6 @@
 import React from 'react'
+
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-
-import Web from 'assets/images/Web.png'
-import Mobile from 'assets/images/Mobile.png'
-import Design from 'assets/images/Design.png'
-
 import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
 
 export default function Testimonial({ data }) {
