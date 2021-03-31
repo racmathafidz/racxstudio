@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Racx Studio
+![alt text](https://github.com/racmathafidz/racxstudio/blob/master/src/assets/images/screely.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
