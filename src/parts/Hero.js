@@ -1,13 +1,15 @@
 import React from 'react'
 
+import Fade from 'react-reveal/Fade';
+
 import Button from 'elements/Button'
 
-import BuildWebsites from 'assets/images/Team-building.png'
+import BuildWebsite from 'assets/images/Startup.png'
 
 export default function Hero(props) {
     return (
         <section className="hero">
-
+        <Fade bottom>
             <div className="w-full lg:w-1/2 xl:pl-12 pr-2 mt-8">
                 <h1 className="text-6xl text-theme-blue font-bold leading-tight mb-5">
                     Growing Your Business <br/>
@@ -26,11 +28,13 @@ export default function Hero(props) {
                     </svg>
                 </Button>
             </div>
-
+        </Fade>
+        
+        <Fade bottom>
             <div className="flex pt-5 w-full justify-center items-center order-first md:w-full lg:order-last lg:w-1/2">
-                <img className="" src={BuildWebsites} alt="Build Website"/>           
+                <img className="" src={BuildWebsite} alt="Build Website"/>           
             </div>
-
+        </Fade>
         </section>
     )
 }

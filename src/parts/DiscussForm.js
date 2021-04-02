@@ -51,13 +51,13 @@ export default function DiscussForm(props) {
 
     return (
         <section className="flex flex-col container mx-auto mt-10 justify-center">
+            <Fade bottom>
                 <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
 
                 <p className="font-light text-lg text-gray-400 text-center mb-12">
                     Please fill out the form below to discuss your project and we'll get back to you in less than 24 hours.
                 </p>
 
-            <Fade bottom>
                 <div className="flex flex-col">
                     <div className="flex flex-col sm:flex-row mx-auto">
                         <Form

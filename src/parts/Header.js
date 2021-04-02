@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+import Fade from 'react-reveal/Fade';
 import { Transition } from '@headlessui/react'
 
 import Button from 'elements/Button'
@@ -11,7 +13,7 @@ export default function Header(props) {
 
     return (
         <header className="header">
-            
+            <Fade>
             <div className="flex justify-between px-4 lg:px-0">
                 <BrandIcon/>
 
@@ -53,39 +55,41 @@ export default function Header(props) {
                     </Button>
                 </li>
             </ul>
-            
+            </Fade>
+
             <Transition
                 show={isCollapse}
-                enter="transition-opacity duration-300"
+                enter="transition-opacity duration-400"
                 enterFrom="opacity-0"
                 enterTo="opacity-100"
-                leave="transition-opacity duration-300"
+                leave="transition-opacity duration-400"
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-                <ul className={`flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden`}>
-                    <li className="py-2">
+                <Fade>
+                <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden">
+                    <li className="py-2 bg-white">
                         <Button 
                             className={`${path === "/" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/">
                             Home
                         </Button>
                     </li>
-                    <li className="py-2">
+                    <li className="py-2 bg-white">
                         <Button 
                             className={`${path === "/team" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/team">
                             Team
                         </Button>
                     </li>
-                    <li className="py-2">
+                    <li className="py-2 bg-white">
                         <Button 
                             className={`${path === "/project" ? "active-link" : ""} px-10 no-underline hover:underline`}
                             type="link" href="/project">
                             Project
                         </Button>
                     </li>
-                    <li className="mx-auto my-9">
+                    <li className="mx-auto my-9 bg-white">
                         <Button 
                             className={`mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200`}
                             type="link" href="/discuss-project">
@@ -93,8 +97,8 @@ export default function Header(props) {
                         </Button>
                     </li>
                 </ul>
+                </Fade>
             </Transition>
-                
         </header>
     )
 }
