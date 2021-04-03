@@ -24,7 +24,7 @@ export default function Testimonial({ data }) {
                         data.map( item => {
                             return (
                                     <SplideSlide>
-                                        <div className="flex-col xl:w-4/5 rounded-2xl shadow-xl sm:shadow-2xl border border-light-theme-purple px-8 py-6 mx-2 mb-6 xl:mx-auto sm:mx-6 sm:mb-12">
+                                        <div className="flex-col xl:w-4/5 rounded-2xl shadow-xl sm:shadow-2xl border border-light-theme-purple px-8 py-6 mx-2 mb-6 mt-6 xl:mx-auto sm:mx-6 sm:mb-12">
                                             <div className="flex items-center mb-5">
                                                 <img src={item.imageUrl} alt="Testimoni" className="w-20 h-20 rounded-full"/>
                                                 <div className="flex-col pl-5">
