@@ -5,8 +5,6 @@
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@headlessui/react": "^0.3.1",
-    "@racxsplide/react-splide": "git+https://github.com/racmathafidz/react-splide.git",
-    "@racxsplide/splide": "git+https://github.com/racmathafidz/splide.git",
     "@splidejs/react-splide": "^0.4.4",
     "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.9",
