@@ -38,7 +38,7 @@ export default function Form(props) {
                     name={name}
                     placeholder={placeholder}
                     value={value}
-                    className={["w-95 sm:w-192 lg:w-192.5 xl:w-193 p-4 mx-2 mb-6 font-light text-lg text-theme-blue rounded border border-gray-400 focus:outline-none focus:ring-1 focus:ring-theme-purple", className].join(" ")}
+                    className={["w-95 sm:w-192 lg:w-192.5 xl:w-192.5 p-4 mx-2 mb-6 font-light text-lg text-theme-blue rounded border border-gray-400 focus:outline-none focus:ring-1 focus:ring-theme-purple", className].join(" ")}
                     onChange={onChange} 
                     rows="9"
                     required
