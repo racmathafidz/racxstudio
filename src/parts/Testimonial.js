@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Fade from 'react-reveal/Fade';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
+import { Splide, SplideSlide } from '@racxsplide/react-splide';
+import '@racxsplide/splide/dist/css/themes/splide-purple.min.css';
 
 export default function Testimonial({ data }) {
     return (
