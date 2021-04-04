@@ -1,6 +1,7 @@
 # Racx Studio
 ![alt text](https://github.com/racmathafidz/racxstudio/blob/master/src/assets/images/screely.png)
 
+A simple software house profile page built with ReactJS and tailwind CSS.
 Demo: https://racxstudio.vercel.app/
 
 ## Getting Started with Create React App
