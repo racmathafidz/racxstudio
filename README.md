@@ -1,6 +1,8 @@
 # Racx Studio
 ![alt text](https://github.com/racmathafidz/racxstudio/blob/master/src/assets/images/screely.png)
 
+Demo: https://racxstudio.vercel.app/
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
