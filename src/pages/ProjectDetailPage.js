@@ -17,11 +17,11 @@ export default class ProjectDetailPage extends Component {
         const detailData = Data.portfolio.filter( item => {
             return item._id === `${this.props.match.params.id}`;
         })
-
+        
         return (
             <>
                 <Header {...this.props}></Header>
-                <PortfolioDetail data={[detailData[0]]}></PortfolioDetail>
+                <PortfolioDetail data={detailData.length == 1 ? [detailData[0]] : null}></PortfolioDetail>
                 <Footer></Footer>
             </>
         )

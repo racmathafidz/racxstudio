@@ -2,9 +2,34 @@ import React from 'react'
 
 import Fade from 'react-reveal/Fade';
 
+import NotFound from 'assets/images/NotFound.png'
+
 import Button from 'elements/Button'
 
 export default function PortfolioDetail({ data }) {
+
+    if (data === null) {
+        return (
+            <section className="container mx-auto">
+                <Fade bottom>
+                    <div className="flex flex-col w-full justify-center">
+                        <div className="flex w-full justify-center">
+                            <img src={NotFound} alt="Not Found" className="sm:w-3/4 xl:w-5/12 mt-5"/>               
+                        </div>
+                        <h1 className="text-theme-blue text-2xl text-center mt-5">
+                            Project Not Found
+                        </h1>
+                        <div className="flex justify-center">
+                            <Button href="/project" type="link" className="flex w-30 h-10 px-5 mt-5 bg-theme-blue text-white items-center rounded transform transition duration-500 hover:bg-gray-900">
+                                Go Back
+                            </Button>
+                        </div>
+                    </div>
+                </Fade>
+            </section>
+        )
+    }
+
     return (
         <section className="container mx-auto">
             <Fade bottom>
