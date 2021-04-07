@@ -37,7 +37,7 @@ export default function Button(props) {
     return (
         <button
             className={props.className}
-            type={props.type === "submit" ? "submit" : ""}
+            type={props.type}
             style={props.style}
             onClick={onClick}
         >
@@ -48,7 +48,7 @@ export default function Button(props) {
 
 Button.PropTypes = {
     className : PropTypes.string,
-    type : PropTypes.oneOf(["button", "link"]),
+    type : PropTypes.oneOf(["button", "link", "submit", "reset"]),
     onClick : PropTypes.func,
     target: PropTypes.string,
     
