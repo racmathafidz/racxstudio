@@ -10,8 +10,8 @@ export default function Hero(props) {
     return (
         <section className="hero">
         <Fade bottom>
-            <div className="w-full lg:w-1/2 xl:pl-12 pr-2 mt-8">
-                <h1 className="text-6xl text-theme-blue font-bold leading-tight mb-5">
+            <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 mt-8">
+                <h1 className="text-5xl sm:text-6xl text-theme-blue font-bold leading-tight mb-5">
                     Growing Your Business <br/>
                     Is Our Calling
                 </h1>
