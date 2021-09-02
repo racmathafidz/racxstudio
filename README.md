@@ -8,7 +8,7 @@ A software house profile website built with ReactJS and TailwindCSS:computer:
 - [**ReactJS**](https://github.com/facebook/create-react-app)
 - [**PostCSS**](https://postcss.org/)
 - [**TailwindCSS**](https://tailwindcss.com/)
-- [**Vercel**](https://vercel.com/)
+- [**Netlify**](https://www.netlify.com/)
 
 ### Library
 - [**emailJS**](https://www.emailjs.com/) : Send email from javascript
