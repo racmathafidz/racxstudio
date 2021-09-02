@@ -20,7 +20,7 @@ A software house profile website built with ReactJS and TailwindCSS:computer:
 - [**ESLint**](https://eslint.org/) : Linting and formatting
 
 ### Demo
-**Demo :** https://racxstudio.vercel.app/
+**Demo :** https://racxstudio.netlify.app/
 
 ### Available Scripts
 
