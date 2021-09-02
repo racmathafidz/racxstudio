@@ -17,6 +17,7 @@ A software house profile website built with ReactJS and TailwindCSS:computer:
 - [**React Reveal**](https://www.react-reveal.com/) : Animation 
 - [**React Tabs**](https://www.npmjs.com/package/react-tabs) : Tab component
 - [**React Toastify**](https://www.npmjs.com/package/react-toastify) : Toast notification 
+- [**ESLint**](https://eslint.org/) : Linting and formatting
 
 ### Demo
 **Demo :** https://racxstudio.vercel.app/
