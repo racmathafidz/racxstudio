@@ -15,7 +15,7 @@
     ],
     "portfolio" : [
         {
-            "_id": "asd1293uasdads1",
+            "id": "asd1293uasdads1",
             "title": "Recruiting App",
             "imageUrl": "assets/images/Recruiting.png",
             "type": "Mobile Apps",
@@ -26,7 +26,7 @@
             "credit": "https://dribbble.com/shots/15164950-Recruiting-app"
         },
         {
-            "_id": "asd1293uhjkhkjh2",
+            "id": "asd1293uhjkhkjh2",
             "title": "Stream+",
             "imageUrl": "assets/images/Stream.png",
             "type": "Mobile Apps",
@@ -37,7 +37,7 @@
             "credit": "https://dribbble.com/shots/15276430-Stream"
         },
         {
-            "_id": "asd1293uvbvcbbd3",
+            "id": "asd1293uvbvcbbd3",
             "title": "Freelance",
             "imageUrl": "assets/images/Freelance.png",
             "type": "Mobile Apps",
@@ -48,7 +48,7 @@
             "credit": "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept"
         },
         {
-            "_id": "asd1293ufgdfgs4",
+            "id": "asd1293ufgdfgs4",
             "title": "Aura",
             "imageUrl": "assets/images/Aura.png",
             "type": "Website",
@@ -59,7 +59,7 @@
             "credit": "https://dribbble.com/shots/15176338-Aura-Website-Main-Page"            
         },
         {
-            "_id": "asd1293ulskmnb5",
+            "id": "asd1293ulskmnb5",
             "title": "Surtido Rico",
             "imageUrl": "assets/images/Surtido.png",
             "type": "Website",
@@ -70,7 +70,7 @@
             "credit": "https://dribbble.com/shots/15173118-Surtido-Rico"
         },
         {
-            "_id": "asd1293ulkmnbj6",
+            "id": "asd1293ulkmnbj6",
             "title": "Courses Management",
             "imageUrl": "assets/images/ManagementApp.png",
             "type": "Website",

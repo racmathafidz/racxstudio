@@ -1,56 +1,83 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import PropTypes from 'prop-types'
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function Button(props) {
+  const {
+    onClick,
+    type,
+    isExternal,
+    href,
+    className,
+    style,
+    target,
+    children,
+  } = props;
 
-    const onClick = () => {
-        if(props.onClick) props.onClick()
-    }
+  const onClickHandler = () => {
+    if (onClick) onClick();
+  };
 
-    if(props.type === "link"){
-        if(props.isExternal){
-            return (
-                <a 
-                    href={props.href}
-                    className={props.className}
-                    style={props.style}
-                    target={props.target === "_blank" ? "_blank" : undefined}
-                >
-                    {props.children}
-                </a>
-            )
-        }
-
-        return (
-            <NavLink
-                to={props.href}
-                className={props.className}
-                style={props.style}
-                onClick={onClick}
-            >
-                {props.children}
-            </NavLink>
-        )
+  if (type === 'link') {
+    if (isExternal) {
+      return (
+        <a
+          href={href}
+          className={className}
+          style={style}
+          target={target === '_blank' ? '_blank' : undefined}
+          rel="noreferrer"
+        >
+          {children}
+        </a>
+      );
     }
 
     return (
-        <button
-            className={props.className}
-            type={props.type}
-            style={props.style}
-            onClick={onClick}
-        >
-            {props.children}
-        </button>
-    )
+      <NavLink
+        to={href}
+        className={className}
+        style={style}
+        onClick={onClickHandler}
+      >
+        {children}
+      </NavLink>
+    );
+  }
+
+  return (
+    <button
+      className={className}
+      type={type}
+      style={style}
+      onClick={onClickHandler}
+    >
+      {children}
+    </button>
+  );
 }
 
-Button.PropTypes = {
-    className : PropTypes.string,
-    type : PropTypes.oneOf(["button", "link", "submit", "reset"]),
-    onClick : PropTypes.func,
-    target: PropTypes.string,
-    
-    isExternal : PropTypes.bool
-}
+Button.defaultProps = {
+  className: '',
+  type: 'button',
+  href: '',
+  onClick: () => {},
+  target: '',
+  style: {},
+  children: '',
+  isExternal: '',
+};
+
+Button.propTypes = {
+  className: PropTypes.string,
+  type: PropTypes.oneOf(['button', 'link', 'submit', 'reset']),
+  href: PropTypes.string,
+  onClick: PropTypes.func,
+  target: PropTypes.string,
+  // eslint-disable-next-line react/forbid-prop-types
+  style: PropTypes.object,
+  children: PropTypes.string,
+  isExternal: PropTypes.bool,
+};
