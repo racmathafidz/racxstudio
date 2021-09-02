@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable max-len */
 /* eslint-disable no-trailing-spaces */
@@ -41,7 +42,7 @@ export default function DiscussForm(props) {
         'user_csqIxzN5mKsl1yw4ffJzV',
       )
         .then(() => {
-          toast.success('Success! we\'\\ll get back to you soon. Thank you!');
+          toast.success('Success! we\'\ll get back to you soon. Thank you!');
           resetForm();
         }, (error) => {
           toast.error(error);
