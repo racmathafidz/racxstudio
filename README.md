@@ -8,7 +8,7 @@ A software house profile website built with ReactJS and TailwindCSS:computer:
 - [**ReactJS**](https://github.com/facebook/create-react-app)
 - [**PostCSS**](https://postcss.org/)
 - [**TailwindCSS**](https://tailwindcss.com/)
-- [**Vercel**](https://vercel.com/)
+- [**Netlify**](https://www.netlify.com/)
 
 ### Library
 - [**emailJS**](https://www.emailjs.com/) : Send email from javascript
@@ -20,7 +20,7 @@ A software house profile website built with ReactJS and TailwindCSS:computer:
 - [**ESLint**](https://eslint.org/) : Linting and formatting
 
 ### Demo
-**Demo :** https://racxstudio.vercel.app/
+**Demo :** https://racxstudio.netlify.app/
 
 ### Available Scripts
 
