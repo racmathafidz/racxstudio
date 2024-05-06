@@ -24,6 +24,8 @@ A software house profile website built with ReactJS and TailwindCSS :computer:
 
 ### Available Scripts
 
+If you want to run this project you have to change your current nodejs version to **12.22.12**.
+
 In the project directory, you can run:
 
 #### `npm start`
