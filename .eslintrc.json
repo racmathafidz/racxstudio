@@ -1,54 +1,44 @@
 // .eslintrc.json
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "airbnb"
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "arrow-body-style": "off",
+    "semi": ["error", "always"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+    "import/extensions": [
+      1,
+      {
+        "js": "always",
+        "json": "always"
+      }
     ],
-    "rules": {
-        "arrow-body-style": "off",
-        "semi": [
-            "error",
-            "always"
-        ],
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx"
-                ]
-            }
-        ],
-        "import/extensions": [
-            1,
-            {
-                "js": "always",
-                "json": "always"
-            }
-        ],
-        "eslint-disable-next-line react/no-array-index-key": "off",
-        "import/no-unresolved": "off",
-        "import/prefer-default-export": "off",
-        "no-multi-spaces": "off",
-        "jsx-a11y/control-has-associated-label": "off",
-        "no-trailing-spaces": "off",
-        "react/jsx-indent": "off",
-        "react/jsx-props-no-multi-spaces": "off",
-        "react/jsx-closing-tag-location": "off"
-    }
+    "eslint-disable-next-line react/no-array-index-key": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-multi-spaces": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-props-no-multi-spaces": "off",
+    "react/jsx-closing-tag-location": "off",
+    "quotes": "off",
+    "react/jsx-one-expression-per-line": "off"
+  }
 }
