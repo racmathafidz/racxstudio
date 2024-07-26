@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
@@ -8,7 +10,7 @@ import Discuss from 'parts/Discuss';
 import Footer from 'parts/Footer';
 import AllPortfolio from 'parts/AllPortfolio';
 
-import Data from 'json/landingPage.json';
+import { Portfolios } from 'json/landingPageData';
 
 export default class ProjectPage extends Component {
   componentDidMount() {
@@ -18,10 +20,10 @@ export default class ProjectPage extends Component {
   render() {
     return (
       <>
-        <Header {...this.props} />
-        <HeroPortfolio {...this.props} />
-        <AllPortfolio data={Data.portfolio} />
-        <Discuss {...this.props} />
+        <Header />
+        <HeroPortfolio />
+        <AllPortfolio data={Portfolios} />
+        <Discuss />
         <Footer />
       </>
     );

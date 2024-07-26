@@ -1,4 +1,8 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+
 import React, { Component } from 'react';
 
 import Button from 'elements/Button';
@@ -14,7 +18,6 @@ export default class NotFoundPage extends Component {
           <img src={NotFound} alt="Not Found" className="sm:w-3/4 xl:w-5/12" />
         </div>
         <h1 className="text-white text-2xl text-center mt-5">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
           You weren't supposed to find this place...
         </h1>
         <div className="flex justify-center">

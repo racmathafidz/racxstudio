@@ -1,8 +1,11 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
+
 import React from 'react';
 
-import BrandIcon from 'parts/BrandIcon';
-import Button from 'elements/Button';
+import BrandIcon from './BrandIcon';
+import Button from '../elements/Button';
 
 export default function Footer() {
   return (

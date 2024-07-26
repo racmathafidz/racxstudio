@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
@@ -7,7 +8,7 @@ import HeroTeam from 'parts/HeroTeam';
 import AllTeam from 'parts/AllTeam';
 import Footer from 'parts/Footer';
 
-import Data from 'json/landingPage.json';
+import { TeamMembers } from 'json/landingPageData';
 
 export default class TeamPage extends Component {
   componentDidMount() {
@@ -17,9 +18,9 @@ export default class TeamPage extends Component {
   render() {
     return (
       <>
-        <Header {...this.props} />
-        <HeroTeam {...this.props} />
-        <AllTeam data={Data.team} />
+        <Header />
+        <HeroTeam />
+        <AllTeam data={TeamMembers} />
         <Footer />
       </>
     );
