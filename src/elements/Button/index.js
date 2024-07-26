@@ -1,21 +1,22 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/require-default-props */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
-export default function Button(props) {
-  const {
-    onClick,
-    type,
-    isExternal,
-    href,
-    className,
-    style,
-    target,
-    children,
-  } = props;
-
+export default function Button({
+  onClick = () => { },
+  type = 'button',
+  isExternal = false,
+  href = '',
+  className = '',
+  style = {},
+  target = '',
+  children = null,
+}) {
   const onClickHandler = () => {
     if (onClick) onClick();
   };
@@ -28,7 +29,7 @@ export default function Button(props) {
           className={className}
           style={style}
           target={target === '_blank' ? '_blank' : undefined}
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           {children}
         </a>
@@ -59,17 +60,6 @@ export default function Button(props) {
   );
 }
 
-Button.defaultProps = {
-  className: '',
-  type: 'button',
-  href: '',
-  onClick: () => {},
-  target: '',
-  style: {},
-  children: '',
-  isExternal: '',
-};
-
 Button.propTypes = {
   className: PropTypes.string,
   type: PropTypes.oneOf(['button', 'link', 'submit', 'reset']),
@@ -78,6 +68,6 @@ Button.propTypes = {
   target: PropTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
   style: PropTypes.object,
-  children: PropTypes.string,
+  children: PropTypes.node, // Accept any renderable content
   isExternal: PropTypes.bool,
 };

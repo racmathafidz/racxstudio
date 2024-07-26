@@ -1,22 +1,25 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable object-shorthand */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-export default function Form(props) {
+export const Form = (props) => {
   const {
     name, value, type, placeholder, className, errorResponse,
   } = props;
 
   const [hasError, setHasError] = useState(null);
 
-  let pattern = '';
+  let pattern;
   if (type === 'email') pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (type === 'tel') pattern = '[0-9]*';
+  if (type === 'number') pattern = /^[0-9]{10}$/;
 
   const onChange = (event) => {
     const target = {
       target: {
-        // eslint-disable-next-line object-shorthand
         name: name,
         value: event.target.value,
       },
@@ -27,8 +30,14 @@ export default function Form(props) {
       else setHasError(null);
     }
 
-    if (type === 'tel') {
+    if (type === 'number') {
       if (event.target.validity.valid) props.onChange(target);
+      if (!pattern.test(event.target.value)) {
+        setHasError(errorResponse);
+      } else {
+        setHasError(null);
+        props.onChange(target);
+      }
     } else {
       props.onChange(target);
     }
@@ -51,7 +60,7 @@ export default function Form(props) {
     );
   }
 
-  if (type === 'tel') {
+  if (type === 'number') {
     return (
       <div className="flex flex-col mb-6 mx-2 lg:mx-5 ">
         <input
@@ -97,7 +106,7 @@ export default function Form(props) {
       )}
     </div>
   );
-}
+};
 
 Form.defaultProps = {
   errorResponse: 'Please match the requested format.',
